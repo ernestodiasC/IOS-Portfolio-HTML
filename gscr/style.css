@@ -66,11 +66,11 @@ h1{
 ul{
     list-style-type: none;
 }
-.link{
+a{
     color:#4600ff;
-}.link:visited{
+}a:visited{
     color:#5940ff;
-}.link:active{
+}a:active{
     color:#A6BF00
 }
 .red{
@@ -116,16 +116,27 @@ input,textarea,select{
 }
 .swiper{
     width:90%;
-    height: 15rem;
+    height: min(23rem,50vw);
 }
 .swiper div img{
-    height:13rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    height: min(18rem,30vw);
     border: .05rem solid var(--c_h1);
     border-radius: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+.swiper div img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 5px var(--c_h1);
 }
 .swiper-pagination{
     background-color: var(--c_bg_dark2);
     border-radius: .5rem;
-    width:5w;
-    position: static;
+}
+img, footer, header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
